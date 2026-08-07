@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="INDIGONIO: objetos 3D, pulseras, velas y squishies de papel.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>INDIGONIO — Tienda creativa</title>
   <style>
     :root{--pink:#f451a8;--pink-dark:#d72d89;--pale:#fff3fa;--ink:#653452;--muted:#956c84;--line:#f5c9df;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;color:var(--ink);background:var(--pale);font:15px/1.5 Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-    header{background:var(--pink);color:#fff;box-shadow:0 3px 12px #a21c6633}.top{display:flex;align-items:center;gap:22px;min-height:72px}.logo{font-size:1.7rem;font-weight:900;letter-spacing:.06em;white-space:nowrap}.search{display:flex;flex:1;max-width:610px;background:#fff;border-radius:8px;overflow:hidden}.search input{width:100%;padding:12px 16px;border:0;outline:0;font-size:1rem}.search button{padding:0 18px;border:0;color:#fff;background:var(--pink-dark);font-size:1.1rem}.cart{font-size:1.5rem;white-space:nowrap}.nav{display:flex;gap:26px;padding:0 0 13px;color:#fff;font-weight:bold}.nav a:hover{text-decoration:underline}
+    header{background:var(--pink);color:#fff;box-shadow:0 3px 12px #a21c6633}.top{display:flex;align-items:center;gap:22px;min-height:72px}.logo{font-size:1.7rem;font-weight:900;letter-spacing:.06em;white-space:nowrap}.search{display:flex;flex:1;max-width:610px;background:#fff;border-radius:8px;overflow:hidden}.search input{width:100%;padding:12px 16px;border:0;outline:0;font-size:1rem}.search button{padding:0 18px;border:0;color:#fff;background:var(--pink-dark);font-size:1.1rem}.cart{position:relative;padding:7px 4px;border:0;color:#fff;background:transparent;font-size:1.5rem;line-height:1;cursor:pointer;white-space:nowrap}.cart-count{position:absolute;top:-3px;right:-8px;display:grid;width:20px;height:20px;place-items:center;border-radius:50%;color:#fff;background:var(--pink-dark);font-size:.72rem;font-weight:bold}.nav{display:flex;gap:26px;padding:0 0 13px;color:#fff;font-weight:bold}.nav a:hover{text-decoration:underline}
     .welcome{margin:25px 0 20px;padding:31px 34px;border-radius:14px;background:linear-gradient(110deg,#ffd0e8,#fff);box-shadow:0 5px 18px #c22c7e12}.welcome h1{margin:0 0 6px;color:var(--pink-dark);font-size:clamp(2rem,5vw,3.2rem)}.welcome p{margin:0;color:var(--muted);font-size:1.1rem}.about-link{display:inline-block;margin-top:18px;color:var(--pink-dark);font-weight:bold}
-    .section{margin:35px 0 45px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:17px}.section h2{margin:0;color:var(--ink);font-size:1.8rem}.section-heading a{color:var(--pink-dark);font-weight:bold}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 3px 10px #b92a7610;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 9px 22px #b92a7624}.photo{display:grid;place-items:center;overflow:hidden;width:100%;height:210px;min-height:0;color:#fff;background:linear-gradient(135deg,#ffc3e3,#ec65ae);font-size:5rem}.photo.real{height:210px;padding:10px;background:#f8edf4}.photo img{display:block;width:100%;height:190px;max-height:100%;object-fit:contain;border-radius:8px}.info{padding:15px}.info h3{min-height:43px;margin:0 0 7px;font-size:1.05rem;font-weight:normal}.detail{margin:0 0 11px;color:var(--muted);font-size:.88rem}.price{margin:0 0 14px;color:var(--ink);font-size:1.35rem;font-weight:bold}.buy{display:block;width:100%;padding:10px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.buy:hover{color:#fff;background:var(--pink)}
-    .empty-card{display:grid;min-height:210px;place-items:center;padding:25px;border:2px dashed #f0afd0;border-radius:12px;color:var(--muted);background:#fff;text-align:center}.empty-card strong{display:block;margin-bottom:5px;color:var(--pink-dark)}footer{margin-top:55px;padding:30px 0;color:#fff;background:var(--pink-dark)}footer .wrap{display:flex;justify-content:space-between;gap:20px}footer a{font-weight:bold}
+    .section{margin:35px 0 45px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:17px}.section h2{margin:0;color:var(--ink);font-size:1.8rem}.section-heading a{color:var(--pink-dark);font-weight:bold}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 3px 10px #b92a7610;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 9px 22px #b92a7624}.photo{display:grid;place-items:center;overflow:hidden;width:100%;height:210px;min-height:0;color:#fff;background:linear-gradient(135deg,#ffc3e3,#ec65ae);font-size:5rem}.photo.real{height:210px;padding:10px;background:#f8edf4}.photo img{display:block;width:100%;height:190px;max-height:100%;object-fit:contain;border-radius:8px}.info{padding:15px}.info h3{min-height:43px;margin:0 0 7px;font-size:1.05rem;font-weight:normal}.detail{margin:0 0 11px;color:var(--muted);font-size:.88rem}.price{margin:0 0 14px;color:var(--ink);font-size:1.35rem;font-weight:bold}.buy{display:block;width:100%;padding:10px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.buy:hover{color:#fff;background:var(--pink)}.cart-count[hidden]{display:none}
+    .empty-card{display:grid;min-height:210px;place-items:center;padding:25px;border:2px dashed #f0afd0;border-radius:12px;color:var(--muted);background:#fff;text-align:center}.empty-card strong{display:block;margin-bottom:5px;color:var(--pink-dark)}footer{margin-top:55px;padding:30px 0;color:#fff;background:var(--pink-dark)}footer .wrap{display:flex;justify-content:space-between;gap:20px}footer a{font-weight:bold}.cart-panel{position:fixed;inset:0 0 0 auto;z-index:20;display:flex;width:min(390px,100%);flex-direction:column;padding:22px;background:#fff;box-shadow:-8px 0 30px #65345230;transform:translateX(105%);transition:transform .25s}.cart-panel.open{transform:translateX(0)}.cart-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}.cart-head h2{margin:0;color:var(--pink-dark);font-size:1.45rem}.close-cart{border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}.cart-items{flex:1;overflow:auto;padding:15px 0}.cart-item{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f8dce9}.cart-item img{width:58px;height:58px;object-fit:contain;border-radius:8px;background:#f8edf4}.cart-item h3{margin:0;font-size:.95rem;font-weight:normal}.cart-item p{margin:4px 0 0;color:var(--muted);font-size:.85rem}.remove-item{border:0;color:var(--pink-dark);background:transparent;cursor:pointer;font-size:1.1rem}.cart-empty{padding:45px 10px;color:var(--muted);text-align:center}.cart-foot{padding-top:16px;border-top:1px solid var(--line)}.cart-total{display:flex;justify-content:space-between;margin-bottom:14px;font-size:1.2rem;font-weight:bold}.clear-cart{width:100%;padding:11px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.cart-overlay{position:fixed;inset:0;z-index:19;background:#65345255;opacity:0;pointer-events:none;transition:opacity .25s}.cart-overlay.open{opacity:1;pointer-events:auto}
     @media(max-width:900px){.products{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:650px){
       .top{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0}
@@ -42,7 +43,7 @@
       <div class="top">
         <a class="logo" href="index.html">INDIGONIO</a>
         <form class="search" role="search" onsubmit="return false"><input type="search" placeholder="Buscar productos..." aria-label="Buscar productos"><button aria-label="Buscar">⌕</button></form>
-        <span class="cart" aria-label="Carrito">🛒</span>
+        <button class="cart" id="cart-button" aria-label="Abrir carrito" aria-expanded="false">🛒<span class="cart-count" id="cart-count">0</span></button>
       </div>
       <nav class="nav" aria-label="Categorías"><a href="#objetos-3d">Objetos 3D</a><a href="#pulseras">Pulseras</a><a href="#velas">Velas</a><a href="#squishies">Squishies de Papel</a></nav>
     </div>
@@ -74,6 +75,77 @@
     <section class="section" id="squishies"><div class="section-heading"><h2>Squishies de Papel</h2></div><div class="empty-card"><div><strong>Próximamente ♡</strong>Personajes y formas para coleccionar y jugar.</div></div></section>
   </main>
 
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-head"><h2>Tu carrito ♡</h2><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot"><div class="cart-total"><span>Total</span><span id="cart-total">$0</span></div><button class="clear-cart" id="clear-cart">Vaciar carrito</button></div>
+  </aside>
+
   <footer><div class="wrap"><span>© 2026 INDIGONIO</span><a href="sobre-nosotros.html">Sobre nosotros →</a></div></footer>
+  <script>
+    const cart = JSON.parse(localStorage.getItem('indigonio-cart') || '[]');
+    const cartButton = document.querySelector('#cart-button');
+    const cartCount = document.querySelector('#cart-count');
+    const cartPanel = document.querySelector('#cart-panel');
+    const cartOverlay = document.querySelector('#cart-overlay');
+    const cartItems = document.querySelector('#cart-items');
+    const cartTotal = document.querySelector('#cart-total');
+
+    const money = value => `$${value.toLocaleString('es-AR')}`;
+    const saveCart = () => localStorage.setItem('indigonio-cart', JSON.stringify(cart));
+
+    function renderCart() {
+      const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+      cartCount.textContent = count;
+      cartCount.hidden = count === 0;
+      cartItems.innerHTML = '';
+      if (!cart.length) {
+        cartItems.innerHTML = '<div class="cart-empty">Tu carrito está vacío ♡<br>Elegí algo lindo para agregar.</div>';
+      } else {
+        cart.forEach((item, index) => {
+          const row = document.createElement('div');
+          row.className = 'cart-item';
+          row.innerHTML = `<img src="${item.image}" alt=""><div><h3>${item.name}</h3><p>${item.quantity} × ${money(item.price)}</p></div><button class="remove-item" data-index="${index}" aria-label="Quitar ${item.name}">×</button>`;
+          cartItems.appendChild(row);
+        });
+      }
+      cartTotal.textContent = money(cart.reduce((sum, item) => sum + item.price * item.quantity, 0));
+      saveCart();
+    }
+
+    function toggleCart(open) {
+      cartPanel.classList.toggle('open', open);
+      cartOverlay.classList.toggle('open', open);
+      cartPanel.setAttribute('aria-hidden', String(!open));
+      cartButton.setAttribute('aria-expanded', String(open));
+    }
+
+    document.querySelectorAll('.buy').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.card');
+        const name = card.querySelector('h3').textContent;
+        const price = Number(card.querySelector('.price').textContent.replace(/[^0-9]/g, ''));
+        const image = card.querySelector('img')?.getAttribute('src') || '';
+        const existing = cart.find(item => item.name === name);
+        if (existing) existing.quantity += 1;
+        else cart.push({ name, price, image, quantity: 1 });
+        renderCart();
+        toggleCart(true);
+      });
+    });
+
+    cartItems.addEventListener('click', event => {
+      const button = event.target.closest('.remove-item');
+      if (!button) return;
+      cart.splice(Number(button.dataset.index), 1);
+      renderCart();
+    });
+    document.querySelector('#clear-cart').addEventListener('click', () => { cart.length = 0; renderCart(); });
+    cartButton.addEventListener('click', () => toggleCart(true));
+    document.querySelector('#close-cart').addEventListener('click', () => toggleCart(false));
+    cartOverlay.addEventListener('click', () => toggleCart(false));
+    renderCart();
+  </script>
 </body>
 </html>

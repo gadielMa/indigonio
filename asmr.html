@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="366x366" href="assets/indigonio-icon.png">
+  <title>Área de ASMR — INDIGONIO</title>
+  <style>
+    :root{--pink:#f451a8;--pink-dark:#d72d89;--pale:#fff3fa;--ink:#653452;--muted:#956c84;--line:#f5c9df}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--pale);font:15px/1.5 Arial,sans-serif}.wrap{width:min(900px,calc(100% - 32px));margin:auto}
+    header{padding:22px 0;color:#fff;background:var(--pink);box-shadow:0 3px 12px #8f627b33}.top{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-size:1.7rem;font-weight:900;letter-spacing:.06em}a{color:inherit;text-decoration:none}.back{padding:7px 12px;border:1px solid #fff;border-radius:999px;color:var(--pink-dark);background:#fff;font-weight:bold}.back:hover{color:#fff;background:var(--pink-dark)}
+    main{padding:45px 0 70px}.intro{text-align:center}.intro h1{margin:0 0 8px;color:var(--pink-dark);font-size:clamp(2rem,6vw,3.4rem)}.intro p{margin:0 0 28px;color:var(--muted);font-size:1.1rem}.asmr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.toy-card{padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:center;box-shadow:0 5px 18px #c22c7e12}.toy-button{display:grid;width:100%;height:190px;place-items:center;border:0;border-radius:10px;background:#fff3fa;cursor:pointer}.toy-button img{width:100%;height:170px;object-fit:contain;transition:transform .16s ease}.toy-button:active img,.toy-button.pressed img{transform:scale(.82,.66)}.toy-button.sticky img{animation:sticky-paw .65s ease-in-out}.toy-card h2{margin:13px 0 2px;color:var(--ink);font-size:1.15rem}.toy-card p{margin:0;color:var(--muted);font-size:.9rem}.popit-wrap{position:relative;width:min(100%,290px);margin:auto}.popit-image{display:block;width:100%;height:auto}.popit-bubble{position:absolute;width:16%;aspect-ratio:1;transform:translate(-50%,-50%);border:0;border-radius:50%;outline:0;appearance:none;-webkit-tap-highlight-color:transparent;background:transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}.popit-bubble:focus,.popit-bubble:focus-visible{outline:none}.popit-bubble.popped{transform:translate(-50%,calc(-50% + 9px)) scale(.84);background:radial-gradient(circle at 50% 42%,#c83d83 0 48%,#e15a9a 50% 72%,transparent 74%);box-shadow:inset 0 5px 8px #8f235c88}.popit-bubble:nth-child(1){top:18.7%;left:49.8%}.popit-bubble:nth-child(2){top:37.4%;left:39%}.popit-bubble:nth-child(3){top:37.4%;left:60.6%}.popit-bubble:nth-child(4){top:43.2%;left:18%}.popit-bubble:nth-child(5){top:43.2%;left:82.5%}.popit-bubble:nth-child(6){width:16%;top:50%;left:50%;z-index:3}.popit-bubble:nth-child(7){top:61.5%;left:31.8%}.popit-bubble:nth-child(8){top:61.5%;left:67.2%}.popit-bubble:nth-child(9){top:79.9%;left:30.4%}.popit-bubble:nth-child(10){top:79.9%;left:69.4%}.popit-bubble:nth-child(11){top:76%;left:50%;z-index:3}.coming-soon{margin-top:26px;padding:25px;border:2px dashed #f0afd0;border-radius:16px;background:#fff;text-align:center}.coming-soon strong{color:var(--pink-dark)}@keyframes sticky-paw{0%{transform:scale(1)}30%{transform:translateY(-18px) scale(.9,.72) rotate(-3deg)}55%{transform:translateY(-12px) scale(.88,.68) rotate(3deg)}100%{transform:translateY(0) scale(1)}}
+    footer{padding:28px 0;color:var(--pink-dark);text-align:center;font-weight:bold}@media(max-width:700px){.asmr-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.top{align-items:flex-start;flex-direction:column}.back{align-self:flex-start}.asmr-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap top"><a class="logo" href="index.html">INDIGONIO</a><a class="back" href="index.html">← Volver a la tienda</a></div></header>
+  <main class="wrap">
+    <section class="intro"><h1>Área de ASMR ♡</h1><p>Tocá los squishies y fidget toys para apretarlos.</p></section>
+    <section class="asmr-grid" aria-label="Juguetes ASMR">
+      <article class="toy-card"><button class="toy-button" type="button" data-voice="Soy una frutilla" aria-label="Apretar squishie de frutilla"><img src="assets/squishie-frutilla.png" alt="Squishie de frutilla"></button><h2>Squishie de frutilla</h2><p>¡Apretame!</p></article>
+      <article class="toy-card"><button class="toy-button" type="button" data-voice="Soy una sandía" aria-label="Apretar squishie de sandía"><img src="assets/squishie-sandia.png" alt="Squishie de sandía"></button><h2>Squishie de sandía</h2><p>¡Apretame!</p></article>
+      <article class="toy-card"><button class="toy-button" type="button" data-effect="sticky" data-sound="squish" aria-label="Apretar squishie de patita"><img src="assets/squishie-patita.png" alt="Squishie de patita"></button><h2>Squishie de patita</h2><p>¡Se pega a tus manos!</p></article>
+      <article class="toy-card"><div class="popit-wrap"><img class="popit-image" src="assets/popit-estrella.png" alt="Pop-it de estrella"><div class="popit-bubbles" aria-label="Burbujas del pop-it de estrella"><button class="popit-bubble" type="button" aria-label="Explotar burbuja 1"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 2"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 3"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 4"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 5"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 6"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 7"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 8"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 9"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 10"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 11"></button></div></div><h2>Pop-it de estrella</h2><p>¡Explotá las burbujas!</p></article>
+    </section>
+    <section class="coming-soon"><strong>Más juguetes ASMR próximamente ♡</strong></section>
+  </main>
+  <footer>Gracias por elegir INDIGONIO ♡</footer>
+  <script>
+    document.querySelectorAll('.toy-button').forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.remove('pressed');
+        void button.offsetWidth;
+        button.classList.add('pressed');
+        window.setTimeout(() => button.classList.remove('pressed'), 220);
+        if (button.dataset.effect === 'sticky') {
+          button.classList.remove('sticky');
+          void button.offsetWidth;
+          button.classList.add('sticky');
+          window.setTimeout(() => button.classList.remove('sticky'), 700);
+        }
+        if (button.dataset.sound === 'squish') {
+          const audio = new (window.AudioContext || window.webkitAudioContext)();
+          const oscillator = audio.createOscillator();
+          const gain = audio.createGain();
+          oscillator.type = 'sine';
+          oscillator.frequency.setValueAtTime(180, audio.currentTime);
+          oscillator.frequency.exponentialRampToValueAtTime(75, audio.currentTime + .16);
+          gain.gain.setValueAtTime(.001, audio.currentTime);
+          gain.gain.exponentialRampToValueAtTime(.16, audio.currentTime + .02);
+          gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .18);
+          oscillator.connect(gain).connect(audio.destination);
+          oscillator.start();
+          oscillator.stop(audio.currentTime + .2);
+          oscillator.addEventListener('ended', () => audio.close());
+        }
+        if (button.dataset.voice && 'speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const voice = new SpeechSynthesisUtterance(button.dataset.voice);
+          voice.lang = 'es-AR';
+          voice.pitch = 2;
+          voice.rate = 2;
+          window.speechSynthesis.speak(voice);
+        }
+      });
+    });
+    const popitBubbles = document.querySelectorAll('.popit-bubble');
+    function playBubbleSound() {
+      const audio = new (window.AudioContext || window.webkitAudioContext)();
+      const oscillator = audio.createOscillator();
+      const gain = audio.createGain();
+      oscillator.type = 'triangle';
+      oscillator.frequency.setValueAtTime(420, audio.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(100, audio.currentTime + .09);
+      gain.gain.setValueAtTime(.001, audio.currentTime);
+      gain.gain.exponentialRampToValueAtTime(.2, audio.currentTime + .01);
+      gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .1);
+      oscillator.connect(gain).connect(audio.destination);
+      oscillator.start();
+      oscillator.stop(audio.currentTime + .12);
+      oscillator.addEventListener('ended', () => audio.close());
+    }
+    popitBubbles.forEach(bubble => {
+      bubble.addEventListener('click', () => {
+        if (bubble.classList.contains('popped')) return;
+        bubble.classList.add('popped');
+        playBubbleSound();
+        if ([...popitBubbles].every(item => item.classList.contains('popped'))) {
+          window.setTimeout(() => popitBubbles.forEach(item => item.classList.remove('popped')), 450);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

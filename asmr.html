@@ -29,6 +29,7 @@
       <article class="toy-card"><button class="toy-button chick-button" type="button" data-effect="eyes" aria-label="Apretar pollito con ojos saltarines"><img src="assets/squishie-pollito.png" alt="Pollito squishie con ojos saltarines"><span class="chick-eye left" aria-hidden="true"></span><span class="chick-eye right" aria-hidden="true"></span></button><h2>Pollito con ojos saltarines</h2><p>¡Sus ojos se salen al apretarlo!</p></article>
       <article class="toy-card"><button class="toy-button" type="button" data-sound="pancake-squish" aria-label="Apretar squishie de hotcake"><img src="assets/squishie-hotcake.png" alt="Squishie de hotcake"></button><h2>Squishie de hotcake</h2><p>¡Suena como pancake!</p></article>
       <article class="toy-card"><button class="toy-button" type="button" data-sound="butter-squish" aria-label="Apretar squishie de helado"><img src="assets/squishie-helado.png" alt="Squishie de helado de frutilla"></button><h2>Squishie de helado</h2><p>¡Suena fuerte y mantecosito!</p></article>
+      <article class="toy-card"><button class="toy-button" type="button" data-sound="toasted-marshmallow" aria-label="Apretar tortita de malvavisco"><img src="assets/squishie-malvavisco.png" alt="Tortita de malvavisco"></button><h2>Tortita de malvavisco</h2><p>¡Hace un crepitar tostado!</p></article>
       <article class="toy-card"><div class="popit-wrap"><img class="popit-image" src="assets/popit-estrella.png" alt="Pop-it de estrella"><div class="popit-bubbles" aria-label="Burbujas del pop-it de estrella"><button class="popit-bubble" type="button" aria-label="Explotar burbuja 1"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 2"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 3"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 4"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 5"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 6"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 7"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 8"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 9"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 10"></button><button class="popit-bubble" type="button" aria-label="Explotar burbuja 11"></button></div></div><h2>Pop-it de estrella</h2><p>¡Explotá las burbujas!</p></article>
     </section>
     <section class="coming-soon"><strong>Más juguetes ASMR próximamente ♡</strong></section>
@@ -61,7 +62,7 @@
           oscillator.frequency.setValueAtTime(180, audio.currentTime);
           oscillator.frequency.exponentialRampToValueAtTime(75, audio.currentTime + .16);
           gain.gain.setValueAtTime(.001, audio.currentTime);
-          gain.gain.exponentialRampToValueAtTime(.35, audio.currentTime + .02);
+          gain.gain.exponentialRampToValueAtTime(.5, audio.currentTime + .02);
           gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .18);
           oscillator.connect(gain).connect(audio.destination);
           oscillator.start();
@@ -79,7 +80,7 @@
           filter.type = 'lowpass';
           filter.frequency.setValueAtTime(520, audio.currentTime);
           gain.gain.setValueAtTime(.001, audio.currentTime);
-          gain.gain.exponentialRampToValueAtTime(.42, audio.currentTime + .025);
+          gain.gain.exponentialRampToValueAtTime(.6, audio.currentTime + .025);
           gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .23);
           oscillator.connect(filter).connect(gain).connect(audio.destination);
           oscillator.start();
@@ -97,12 +98,31 @@
           filter.type = 'lowpass';
           filter.frequency.setValueAtTime(750, audio.currentTime);
           gain.gain.setValueAtTime(.001, audio.currentTime);
-          gain.gain.exponentialRampToValueAtTime(.28, audio.currentTime + .018);
+          gain.gain.exponentialRampToValueAtTime(.65, audio.currentTime + .018);
           gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .17);
           oscillator.connect(filter).connect(gain).connect(audio.destination);
           oscillator.start();
           oscillator.stop(audio.currentTime + .19);
           oscillator.addEventListener('ended', () => audio.close());
+        }
+        if (button.dataset.sound === 'toasted-marshmallow') {
+          const audio = new (window.AudioContext || window.webkitAudioContext)();
+          const buffer = audio.createBuffer(1, audio.sampleRate * .2, audio.sampleRate);
+          const samples = buffer.getChannelData(0);
+          for (let index = 0; index < samples.length; index += 1) samples[index] = (Math.random() * 2 - 1) * (1 - index / samples.length);
+          const crackle = audio.createBufferSource();
+          const filter = audio.createBiquadFilter();
+          const gain = audio.createGain();
+          crackle.buffer = buffer;
+          filter.type = 'highpass';
+          filter.frequency.setValueAtTime(850, audio.currentTime);
+          gain.gain.setValueAtTime(.001, audio.currentTime);
+          gain.gain.exponentialRampToValueAtTime(.3, audio.currentTime + .015);
+          gain.gain.exponentialRampToValueAtTime(.001, audio.currentTime + .2);
+          crackle.connect(filter).connect(gain).connect(audio.destination);
+          crackle.start();
+          crackle.stop(audio.currentTime + .21);
+          crackle.addEventListener('ended', () => audio.close());
         }
         if (button.dataset.voice && 'speechSynthesis' in window) {
           window.speechSynthesis.cancel();

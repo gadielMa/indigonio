@@ -10,13 +10,14 @@
   <style>
     :root{--pink:#f451a8;--pink-dark:#d72d89;--pale:#fff3fa;--ink:#653452;--muted:#956c84;--line:#f5c9df;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;color:var(--ink);background:var(--pale);font:15px/1.5 Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-    header{background:var(--pink);color:#fff;box-shadow:0 3px 12px #8f627b33}.top{display:flex;align-items:center;gap:22px;min-height:72px}.logo{font-size:1.7rem;font-weight:900;letter-spacing:.06em;white-space:nowrap}.search-area{display:flex;flex:1;max-width:610px;flex-direction:column;gap:7px}.search{display:flex;background:#fff;border-radius:8px;overflow:hidden}.search input{width:100%;padding:12px 16px;border:0;outline:0;font-size:1rem}.search button{padding:0 18px;border:0;color:#fff;background:var(--pink-dark);font-size:1.1rem}.cart{position:relative;padding:8px 11px;border:2px solid #fff;border-radius:8px;color:var(--pink-dark);background:#fff;font-size:1.5rem;line-height:1;cursor:pointer;white-space:nowrap}.cart:hover{background:#fff4fa}.cart-count{position:absolute;top:-8px;right:-8px;display:grid;width:20px;height:20px;place-items:center;border-radius:50%;color:#fff;background:var(--pink-dark);font-size:.72rem;font-weight:bold}.nav{display:flex;align-items:center;justify-content:center;gap:10px;padding:0 0 13px;color:#fff;font-weight:bold;flex-wrap:wrap}.nav a{padding:4px 11px;border:1px solid #fff;border-radius:999px;color:var(--pink-dark);background:#fff}.nav a:hover{text-decoration:none;color:#fff;background:var(--pink-dark)}.footer-link{display:inline-block;padding:7px 12px;border:1px solid var(--pink-dark);border-radius:8px;color:var(--pink-dark);background:#fff;font-weight:bold}.footer-link:hover{background:#fff4fa}
+    header{background:var(--pink);color:#fff;box-shadow:0 3px 12px #8f627b33}.top{display:flex;align-items:center;gap:22px;min-height:72px}.logo{font-size:1.7rem;font-weight:900;letter-spacing:.06em;white-space:nowrap}.search-area{display:flex;flex:1;max-width:610px;flex-direction:column;gap:7px}.search{display:flex;background:#fff;border-radius:8px;overflow:hidden}.search input{width:100%;padding:12px 16px;border:0;outline:0;font-size:1rem}.search button{padding:0 18px;border:0;color:#fff;background:var(--pink-dark);font-size:1.1rem}.cart{position:relative;padding:8px 11px;border:2px solid #fff;border-radius:8px;color:var(--pink-dark);background:#fff;font-size:1.5rem;line-height:1;cursor:pointer;white-space:nowrap}.cart:hover{background:#fff4fa}.cart-count{position:absolute;top:-8px;right:-8px;display:grid;width:20px;height:20px;place-items:center;border-radius:50%;color:#fff;background:var(--pink-dark);font-size:.72rem;font-weight:bold}.auth-button{padding:9px 12px;border:2px solid #fff;border-radius:8px;color:var(--pink-dark);background:#fff;font:inherit;font-weight:bold;cursor:pointer;white-space:nowrap}.auth-button:hover{color:#fff;background:var(--pink-dark)}.auth-button.signed-in{max-width:180px;overflow:hidden;text-overflow:ellipsis}.nav{display:flex;align-items:center;justify-content:center;gap:10px;padding:0 0 13px;color:#fff;font-weight:bold;flex-wrap:wrap}.nav a{padding:4px 11px;border:1px solid #fff;border-radius:999px;color:var(--pink-dark);background:#fff}.nav a:hover{text-decoration:none;color:#fff;background:var(--pink-dark)}.footer-link{display:inline-block;padding:7px 12px;border:1px solid var(--pink-dark);border-radius:8px;color:var(--pink-dark);background:#fff;font-weight:bold}.footer-link:hover{background:#fff4fa}
     .welcome{margin:25px 0 20px;padding:31px 34px;border-radius:14px;background:linear-gradient(110deg,#ffd0e8,#fff);box-shadow:0 5px 18px #c22c7e12}.welcome h1{margin:0 0 6px;color:var(--pink-dark);font-size:clamp(2rem,5vw,3.2rem)}.welcome p{margin:0;color:var(--muted);font-size:1.1rem}.about-link{display:inline-block;margin-top:18px;color:var(--pink-dark);font-weight:bold}
     .section{margin:35px 0 45px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:17px}.section h2{margin:0;color:var(--ink);font-size:1.8rem}.category-note{margin:4px 0 0;color:var(--muted);font-size:.95rem}.section-heading a{color:var(--pink-dark);font-weight:bold}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 3px 10px #b92a7610;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 9px 22px #b92a7624}.photo{position:relative;display:grid;place-items:center;overflow:hidden;width:100%;height:210px;min-height:0;color:#fff;background:linear-gradient(135deg,#ffc3e3,#ec65ae);font-size:5rem}.photo.real{height:210px;padding:10px;background:#f8edf4}.photo img{display:block;width:100%;height:190px;max-height:100%;object-fit:contain;border-radius:8px}.info{padding:15px}.info h3{min-height:43px;margin:0 0 7px;font-size:1.05rem;font-weight:normal}.detail{margin:0 0 11px;color:var(--muted);font-size:.88rem}.price{margin:0 0 14px;color:var(--ink);font-size:1.35rem;font-weight:bold}.buy{display:block;width:100%;padding:10px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.buy:hover{color:#fff;background:var(--pink)}.cart-count[hidden]{display:none}
-    .empty-card{display:grid;min-height:210px;place-items:center;padding:25px;border:2px dashed #f0afd0;border-radius:12px;color:var(--muted);background:#fff;text-align:center}.empty-card strong{display:block;margin-bottom:5px;color:var(--pink-dark)}.search-empty{margin:18px 0;padding:18px;border-radius:10px;color:var(--muted);background:#fff;text-align:center}.search-empty[hidden]{display:none}.section.search-hidden{display:none}.payment-info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 28px;padding:14px 16px;border:1px solid #b9dcf0;border-radius:12px;background:#f1fbff}.payment-info h2{grid-column:1/-1;margin:0;color:#297aa5;font-size:1.25rem}.payment-box{padding:10px 12px;border-radius:8px;background:#e4f5fc;color:#4e7385;font-size:.9rem}.payment-box strong{display:flex;align-items:center;gap:7px;margin-bottom:3px;color:#297aa5;font-size:.85rem}.payment-icon{width:24px;height:24px;object-fit:contain;border-radius:5px}.cart-panel{position:fixed;inset:0 0 0 auto;z-index:20;display:flex;width:min(390px,100%);flex-direction:column;padding:22px;background:#fff;box-shadow:-8px 0 30px #65345230;transform:translateX(105%);transition:transform .25s}.cart-panel.open{transform:translateX(0)}.cart-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}.cart-head h2{margin:0;color:var(--pink-dark);font-size:1.45rem}.close-cart{border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}.cart-items{flex:1;overflow:auto;padding:15px 0}.cart-item{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f8dce9}.cart-item img{width:58px;height:58px;object-fit:contain;border-radius:8px;background:#f8edf4}.cart-item h3{margin:0;font-size:.95rem;font-weight:normal}.cart-item p{margin:4px 0 0;color:var(--muted);font-size:.85rem}.remove-item{border:0;color:var(--pink-dark);background:transparent;cursor:pointer;font-size:1.1rem}.cart-empty{padding:45px 10px;color:var(--muted);text-align:center}.cart-foot{padding-top:16px;border-top:1px solid var(--line)}.cart-total{display:flex;justify-content:space-between;margin-bottom:14px;font-size:1.2rem;font-weight:bold}.pay-cart{width:100%;margin-bottom:9px;padding:12px;border:0;border-radius:7px;color:#fff;background:var(--pink);font-weight:bold;cursor:pointer}.clear-cart{width:100%;padding:11px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.cart-overlay{position:fixed;inset:0;z-index:19;background:#65345255;opacity:0;pointer-events:none;transition:opacity .25s}.cart-overlay.open{opacity:1;pointer-events:auto}.payment-screen{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:20px;background:#65345299;opacity:0;pointer-events:none;transition:opacity .2s}.payment-screen.open{opacity:1;pointer-events:auto}.payment-modal{position:relative;width:min(500px,100%);max-height:90vh;overflow:auto;padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.payment-modal h2{margin:0 0 8px;color:var(--pink-dark)}.payment-modal p{color:var(--muted)}.payment-details{margin:20px 0;padding:16px;border-radius:10px;background:#fff3fa}.payment-details p{margin:8px 0;color:var(--ink)}.payment-details strong{color:var(--pink-dark)}.whatsapp-button{display:flex;align-items:center;justify-content:center;gap:9px;padding:13px;border-radius:8px;color:#fff;background:#25d366;text-align:center;font-weight:bold}.whatsapp-icon{width:24px;height:24px;object-fit:contain}.close-payment{position:absolute;top:10px;right:14px;border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}
+    .empty-card{display:grid;min-height:210px;place-items:center;padding:25px;border:2px dashed #f0afd0;border-radius:12px;color:var(--muted);background:#fff;text-align:center}.empty-card strong{display:block;margin-bottom:5px;color:var(--pink-dark)}.search-empty{margin:18px 0;padding:18px;border-radius:10px;color:var(--muted);background:#fff;text-align:center}.search-empty[hidden]{display:none}.section.search-hidden{display:none}.payment-info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 28px;padding:14px 16px;border:1px solid #b9dcf0;border-radius:12px;background:#f1fbff}.payment-info h2{grid-column:1/-1;margin:0;color:#297aa5;font-size:1.25rem}.payment-box{padding:10px 12px;border-radius:8px;background:#e4f5fc;color:#4e7385;font-size:.9rem}.payment-box strong{display:flex;align-items:center;gap:7px;margin-bottom:3px;color:#297aa5;font-size:.85rem}.payment-icon{width:24px;height:24px;object-fit:contain;border-radius:5px}.cart-panel{position:fixed;inset:0 0 0 auto;z-index:20;display:flex;width:min(390px,100%);flex-direction:column;padding:22px;background:#fff;box-shadow:-8px 0 30px #65345230;transform:translateX(105%);transition:transform .25s}.cart-panel.open{transform:translateX(0)}.cart-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}.cart-head h2{margin:0;color:var(--pink-dark);font-size:1.45rem}.close-cart{border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}.cart-items{flex:1;overflow:auto;padding:15px 0}.cart-item{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f8dce9}.cart-item img{width:58px;height:58px;object-fit:contain;border-radius:8px;background:#f8edf4}.cart-item h3{margin:0;font-size:.95rem;font-weight:normal}.cart-item p{margin:4px 0 0;color:var(--muted);font-size:.85rem}.remove-item{border:0;color:var(--pink-dark);background:transparent;cursor:pointer;font-size:1.1rem}.cart-empty{padding:45px 10px;color:var(--muted);text-align:center}.cart-foot{padding-top:16px;border-top:1px solid var(--line)}.cart-total{display:flex;justify-content:space-between;margin-bottom:14px;font-size:1.2rem;font-weight:bold}.pay-cart{width:100%;margin-bottom:9px;padding:12px;border:0;border-radius:7px;color:#fff;background:var(--pink);font-weight:bold;cursor:pointer}.clear-cart{width:100%;padding:11px;border:1px solid #f4a7ce;border-radius:7px;color:var(--pink-dark);background:#fff4fa;font-weight:bold;cursor:pointer}.cart-overlay{position:fixed;inset:0;z-index:19;background:#65345255;opacity:0;pointer-events:none;transition:opacity .25s}.cart-overlay.open{opacity:1;pointer-events:auto}.payment-screen{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:20px;background:#65345299;opacity:0;pointer-events:none;transition:opacity .2s}.payment-screen.open{opacity:1;pointer-events:auto}.payment-modal{position:relative;width:min(500px,100%);max-height:90vh;overflow:auto;padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.payment-modal h2{margin:0 0 8px;color:var(--pink-dark)}.payment-modal p{color:var(--muted)}.payment-details{margin:20px 0;padding:16px;border-radius:10px;background:#fff3fa}.payment-details p{margin:8px 0;color:var(--ink)}.payment-details strong{color:var(--pink-dark)}.receipt-upload{margin:18px 0;padding:14px;border:1px dashed var(--pink);border-radius:10px;background:#fff7fb}.receipt-upload label{display:block;margin-bottom:6px;color:var(--pink-dark);font-weight:bold}.receipt-upload input{width:100%;color:var(--ink);font:inherit}.receipt-status{margin:8px 0 0!important;font-size:.9rem}.whatsapp-button{display:flex;align-items:center;justify-content:center;gap:9px;padding:13px;border-radius:8px;color:#fff;background:#25d366;text-align:center;font-weight:bold}.whatsapp-button[aria-disabled="true"]{pointer-events:none;opacity:.5}.whatsapp-icon{width:24px;height:24px;object-fit:contain}.close-payment{position:absolute;top:10px;right:14px;border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}
     .color-screen{position:fixed;inset:0;z-index:25;display:grid;place-items:center;padding:20px;background:#65345299;opacity:0;pointer-events:none;transition:opacity .2s}.color-screen.open{opacity:1;pointer-events:auto}.color-modal{position:relative;width:min(420px,100%);padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.color-modal h2{margin:0 0 6px;color:var(--pink-dark)}.color-modal p{margin:0 0 18px;color:var(--muted)}.color-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}.color-option{display:flex;align-items:center;gap:8px;padding:10px;border:2px solid var(--line);border-radius:8px;color:var(--ink);background:#fff;cursor:pointer;font-weight:bold}.color-option.selected{border-color:var(--pink-dark);background:#fff0f8;box-shadow:0 0 0 2px #f9c0dd}.color-dot{width:20px;height:20px;flex:none;border:1px solid #cdaabd;border-radius:50%}.color-dot.rosa{background:#f58ab8}.color-dot.negro{background:#222}.color-dot.blanco{background:#fff}.color-dot.rojo{background:#e53935}.color-dot.marron{background:#8b5e3c}.color-dot.naranja{background:#f28c28}.confirm-color{width:100%;padding:12px;border:0;border-radius:7px;color:#fff;background:var(--pink);font-weight:bold;cursor:pointer}.confirm-color:disabled{cursor:not-allowed;opacity:.45}.close-color{position:absolute;top:10px;right:14px;border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}
     .color-details{display:block;width:100%;min-height:74px;margin:0 0 18px;padding:10px;border:1px solid var(--line);border-radius:8px;color:var(--ink);font:inherit;resize:vertical}.color-details::placeholder{color:var(--muted)}.customer-name{display:block;width:100%;margin:0 0 18px;padding:10px;border:1px solid var(--line);border-radius:8px;color:var(--ink);font:inherit}.customer-name:focus,.color-details:focus{border-color:var(--pink-dark);outline:2px solid #f9c0dd}.required-note{margin:-12px 0 14px;color:var(--pink-dark);font-size:.82rem}
     .photo img{cursor:zoom-in}.image-screen{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:24px;background:#2b1725dd;opacity:0;pointer-events:none;transition:opacity .2s}.image-screen.open{opacity:1;pointer-events:auto}.image-modal{position:relative;width:min(680px,100%);max-height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #0008;text-align:center}.image-modal img{display:block;width:100%;max-height:70vh;object-fit:contain;border-radius:10px;background:#f8edf4}.image-modal h2{margin:14px 0 3px;color:var(--ink);font-size:1.35rem}.image-modal p{margin:0;color:var(--pink-dark);font-size:1.25rem;font-weight:bold}.close-image{position:absolute;top:5px;right:10px;z-index:1;border:0;color:var(--muted);background:transparent;font-size:2rem;line-height:1;cursor:pointer}
+    .auth-screen{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:20px;background:#65345299;opacity:0;pointer-events:none;transition:opacity .2s}.auth-screen.open{opacity:1;pointer-events:auto}.auth-modal{position:relative;width:min(440px,100%);max-height:90vh;overflow:auto;padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.auth-modal h2{margin:0 0 6px;color:var(--pink-dark)}.auth-modal>p{margin:0 0 18px;color:var(--muted)}.auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}.auth-tab{padding:9px;border:1px solid var(--line);border-radius:7px;color:var(--pink-dark);background:#fff4fa;font:inherit;font-weight:bold;cursor:pointer}.auth-tab.active{color:#fff;background:var(--pink)}.auth-form label{display:block;margin:12px 0 5px;font-weight:bold}.auth-form input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;color:var(--ink);font:inherit}.auth-form input:focus{border-color:var(--pink-dark);outline:2px solid #f9c0dd}.auth-form small{display:block;margin-top:5px;color:var(--muted)}.auth-submit{width:100%;margin-top:20px;padding:12px;border:0;border-radius:7px;color:#fff;background:var(--pink);font:inherit;font-weight:bold;cursor:pointer}.auth-error{min-height:22px;margin:12px 0 0!important;color:#bd1b68!important;font-size:.9rem}.auth-account{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}.logout-button{padding:8px 10px;border:1px solid var(--line);border-radius:7px;color:var(--pink-dark);background:#fff4fa;font:inherit;font-weight:bold;cursor:pointer}.close-auth{position:absolute;top:10px;right:14px;border:0;color:var(--muted);background:transparent;font-size:1.6rem;cursor:pointer}.permission-screen{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:20px;background:#653452aa}.auth-tabs[hidden],.auth-form[hidden],.auth-account[hidden],.permission-screen[hidden]{display:none}.permission-modal{width:min(450px,100%);padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.permission-modal h2{margin:0 0 8px;color:var(--pink-dark)}.permission-modal p{color:var(--muted)}.permission-list{margin:18px 0;padding-left:22px;color:var(--ink)}.permission-list li+li{margin-top:8px}.permission-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.permission-actions button{padding:11px 14px;border-radius:8px;font:inherit;font-weight:bold;cursor:pointer}.allow-permissions{border:0;color:#fff;background:var(--pink)}.later-permissions{border:1px solid var(--line);color:var(--pink-dark);background:#fff4fa}.permission-confirmation{position:fixed;inset:0;z-index:70;display:grid;place-items:center;padding:20px;background:#653452aa}.permission-confirmation[hidden]{display:none}.permission-confirmation-modal{width:min(390px,100%);padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255}.permission-confirmation-modal h2{margin:0 0 8px;color:var(--pink-dark)}.permission-confirmation-modal p{margin:0;color:var(--muted)}.permission-confirmation-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.permission-confirmation-actions button{padding:11px 14px;border-radius:8px;font:inherit;font-weight:bold;cursor:pointer}.confirm-permission-action{border:0;color:#fff;background:var(--pink)}.cancel-permission-action{border:1px solid var(--line);color:var(--pink-dark);background:#fff4fa}.roulette-screen{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:20px;background:#653452aa}.roulette-screen[hidden]{display:none}.roulette-modal{width:min(420px,100%);padding:28px;border-radius:16px;background:#fff;box-shadow:0 14px 40px #65345255;text-align:center}.roulette-modal h2{margin:0 0 6px;color:var(--pink-dark)}.roulette-modal p{margin:0;color:var(--muted)}.roulette-pointer{width:0;height:0;margin:14px auto -8px;border-right:15px solid transparent;border-left:15px solid transparent;border-top:28px solid var(--pink-dark);position:relative;z-index:1}.discount-wheel{display:grid;width:230px;height:230px;place-items:center;margin:auto;border:8px solid #fff;border-radius:50%;background:conic-gradient(#f451a8 0deg 90deg,#f9a8cf 90deg 180deg,#d72d89 180deg 270deg,#ffcae3 270deg 360deg);box-shadow:0 0 0 3px var(--pink-dark),0 8px 18px #65345233;transition:transform 2.2s cubic-bezier(.15,.75,.1,1)}.wheel-center{display:grid;width:78px;height:78px;place-items:center;border-radius:50%;color:var(--pink-dark);background:#fff;font-weight:bold;font-size:.9rem}.roulette-labels{display:flex;justify-content:space-around;margin:12px 0 18px;color:var(--pink-dark);font-weight:bold}.spin-roulette{width:100%;padding:12px;border:0;border-radius:7px;color:#fff;background:var(--pink);font:inherit;font-weight:bold;cursor:pointer}.spin-roulette:disabled{cursor:not-allowed;opacity:.55}.roulette-result{min-height:24px;margin:12px 0 0!important;color:var(--pink-dark)!important;font-weight:bold}
     @media(max-width:900px){.products{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:650px){
       .top{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0}
@@ -35,7 +36,7 @@
       .info h3{min-height:0;font-size:.98rem}
       .price{font-size:1.15rem}
       .buy{padding:9px 5px;font-size:.88rem}
-      .cart{font-size:1.3rem}
+      .cart{font-size:1.3rem}.auth-button{padding:8px 9px;font-size:.85rem;max-width:130px}
       .payment-info{grid-template-columns:1fr}
       footer .wrap{flex-wrap:wrap}
     }
@@ -49,6 +50,7 @@
       <div class="top">
         <a class="logo" href="index.html">INDIGONIO</a>
         <div class="search-area"><form class="search" id="search-form" role="search"><input id="search-input" type="search" placeholder="Buscar productos..." aria-label="Buscar productos"><button aria-label="Buscar">⌕</button></form></div>
+        <button class="auth-button" id="auth-button" type="button">Iniciar sesión</button>
         <button class="cart" id="cart-button" aria-label="Abrir carrito" aria-expanded="false">🛒<span class="cart-count" id="cart-count">0</span></button>
       </div>
       <nav class="nav" aria-label="Categorías y páginas"><a href="#objetos-3d">Objetos 3D</a><a href="#pulseras">Pulseras</a><a href="#velas">Velas</a><a class="page-link" href="sobre-nosotros.html">Quiénes somos</a><a class="page-link" href="asmr.html">Área de ASMR</a></nav>
@@ -107,6 +109,7 @@
         <article class="card"><div class="photo real"><img src="assets/dispensador-toallitas-sanitarias.png" alt="Dispensador de toallitas sanitarias en varios colores"></div><div class="info"><h3>Dispensador de toallitas sanitarias</h3><p class="detail">Elegí un solo color</p><p class="price">$9.500</p><button class="buy">Agregar al carrito</button></div></article>
         <article class="card"><div class="photo real"><img src="assets/perrito-globo-porta-lentes.png" alt="Perrito de globo porta lentes"></div><div class="info"><h3>Perrito de globo porta lentes</h3><p class="detail">Elegí un solo color</p><p class="price">$10.000</p><button class="buy">Agregar al carrito</button></div></article>
         <article class="card"><div class="photo real"><img src="assets/soporte-perrito-lentes-acostado.png" alt="Soporte de perrito para lentes acostado"></div><div class="info"><h3>Soporte de perrito para lentes acostado</h3><p class="detail">Elegí un solo color</p><p class="price">$10.000</p><button class="buy">Agregar al carrito</button></div></article>
+        <article class="card"><div class="photo real"><img src="assets/porta-photocarsd-katseye.png" alt="Porta photocarsd de KATSEYE violeta"></div><div class="info"><h3>Porta photocarsd de KATSEYE</h3><p class="detail">Elegí exactamente dos colores</p><p class="price">$8.500</p><button class="buy">Agregar al carrito</button></div></article>
       </div>
     </section>
 
@@ -158,6 +161,46 @@
       <p id="image-price"></p>
     </section>
   </div>
+  <div class="auth-screen" id="auth-screen" aria-hidden="true">
+    <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <h2 id="auth-title">Entrá a INDIGONIO ♡</h2>
+      <p id="auth-message">Iniciá sesión para agregar productos y comprar.</p>
+      <div class="auth-tabs" id="auth-tabs">
+        <button class="auth-tab active" type="button" data-mode="login">Iniciar sesión</button>
+        <button class="auth-tab" type="button" data-mode="register">Crear cuenta</button>
+      </div>
+      <form class="auth-form" id="auth-form">
+        <label for="auth-username">Nombre de usuario</label>
+        <input id="auth-username" name="username" autocomplete="username" maxlength="30" pattern="[A-Za-z0-9_-]{3,30}" required placeholder="Ej.: indi_rosa">
+        <label for="auth-password">Contraseña</label>
+        <input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="6" required placeholder="Mínimo 6 caracteres">
+        <div id="secret-word-field">
+          <label for="auth-secret">Palabra secreta</label>
+          <input id="auth-secret" name="secret" type="password" autocomplete="off" minlength="3" maxlength="40" required placeholder="Tu palabra única para entrar">
+          <small id="secret-help">También la vas a usar para entrar a tu cuenta.</small>
+        </div>
+        <button class="auth-submit" id="auth-submit" type="submit">Iniciar sesión</button>
+      </form>
+      <p class="auth-error" id="auth-error" role="alert"></p>
+      <div class="auth-account" id="auth-account" hidden><span id="signed-in-name"></span><button class="logout-button" id="logout-button" type="button">Cerrar sesión</button></div>
+    </section>
+  </div>
+  <div class="permission-screen" id="permission-screen" role="dialog" aria-modal="true" aria-labelledby="permission-title" hidden>
+    <section class="permission-modal">
+      <h2 id="permission-title">Permisos para finalizar tu compra</h2>
+      <p>Para enviar el comprobante, INDIGONIO necesita tu autorización para:</p>
+      <ul class="permission-list"><li>Elegir una captura de tu comprobante desde tu dispositivo.</li><li>Abrir WhatsApp con los datos de tu pedido.</li></ul>
+      <p>Solo se te pedirá la captura al momento de pagar. No accedemos a tus fotos automáticamente.</p>
+      <div class="permission-actions"><button class="later-permissions" id="later-permissions" type="button">Ahora no</button><button class="allow-permissions" id="allow-permissions" type="button">Permitir y continuar</button></div>
+    </section>
+  </div>
+  <div class="permission-confirmation" id="permission-confirmation" role="dialog" aria-modal="true" aria-labelledby="permission-confirmation-title" hidden>
+    <section class="permission-confirmation-modal">
+      <h2 id="permission-confirmation-title">¿Estás seguro/a?</h2>
+      <p id="permission-confirmation-message">Confirmá esta acción para continuar.</p>
+      <div class="permission-confirmation-actions"><button class="cancel-permission-action" id="cancel-permission-action" type="button">Cancelar</button><button class="confirm-permission-action" id="confirm-permission-action" type="button">Sí, continuar</button></div>
+    </section>
+  </div>
   <div class="cart-overlay" id="cart-overlay"></div>
   <aside class="cart-panel" id="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
     <div class="cart-head"><h2>Tu carrito ♡</h2><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div>
@@ -174,15 +217,28 @@
         <p><strong>Alias:</strong> la.potaxia.mayor</p>
         <p><strong>CVU:</strong> 0000003100098186444802</p>
         <p><strong>Total:</strong> <span id="payment-total">$0</span></p>
+        <p id="payment-discount" hidden><strong>Descuento de la ruleta:</strong> <span id="payment-discount-value"></span></p>
         <p><strong>Entrega:</strong> presencial</p>
       </div>
-      <p><strong>Compartir comprobante de pago vía WhatsApp</strong></p>
-      <a class="whatsapp-button" id="whatsapp-button" href="https://wa.me/?text=Hola%20INDIGONIO%2C%20quiero%20compartir%20mi%20comprobante%20de%20pago." target="_blank" rel="noopener"><img class="whatsapp-icon" src="assets/whatsapp.webp" alt="">Abrir WhatsApp</a>
+      <div class="receipt-upload"><label for="receipt-file">Captura del comprobante <span aria-hidden="true">*</span></label><input id="receipt-file" type="file" accept="image/png,image/jpeg,image/webp" required><p class="receipt-status" id="receipt-status">Elegí una captura para habilitar el envío.</p></div>
+      <p><strong>Compartir comprobante de pago vía WhatsApp</strong><br>Al abrir WhatsApp, adjuntá la misma captura antes de enviar.</p>
+      <a class="whatsapp-button" id="whatsapp-button" href="#" aria-disabled="true" target="_blank" rel="noopener"><img class="whatsapp-icon" src="assets/whatsapp.webp" alt="">Abrir WhatsApp</a>
+    </section>
+  </div>
+  <div class="roulette-screen" id="roulette-screen" role="dialog" aria-modal="true" aria-labelledby="roulette-title" hidden>
+    <section class="roulette-modal">
+      <h2 id="roulette-title">¡Tenés una ruleta de descuentos! ♡</h2>
+      <p>Tu compra supera $40.000. Girala para conocer tu descuento.</p>
+      <div class="roulette-pointer" aria-hidden="true"></div>
+      <div class="discount-wheel" id="discount-wheel" aria-label="Ruleta con descuentos de 5, 10, 15 y 20 por ciento"><span class="wheel-center">GIRÁ</span></div>
+      <div class="roulette-labels" aria-hidden="true"><span>5%</span><span>10%</span><span>15%</span><span>20%</span></div>
+      <button class="spin-roulette" id="spin-roulette" type="button">Girar ruleta</button>
+      <p class="roulette-result" id="roulette-result" aria-live="polite"></p>
     </section>
   </div>
   <footer><div class="wrap"><span>© 2026 INDIGONIO</span></div></footer>
   <script>
-    const cart = JSON.parse(localStorage.getItem('indigonio-cart') || '[]');
+    const cart = [];
     const cartButton = document.querySelector('#cart-button');
     const cartCount = document.querySelector('#cart-count');
     const cartPanel = document.querySelector('#cart-panel');
@@ -191,7 +247,19 @@
     const cartTotal = document.querySelector('#cart-total');
     const paymentScreen = document.querySelector('#payment-screen');
     const paymentTotal = document.querySelector('#payment-total');
+    const paymentDiscount = document.querySelector('#payment-discount');
+    const paymentDiscountValue = document.querySelector('#payment-discount-value');
     const whatsappButton = document.querySelector('#whatsapp-button');
+    const receiptFile = document.querySelector('#receipt-file');
+    const receiptStatus = document.querySelector('#receipt-status');
+    const permissionScreen = document.querySelector('#permission-screen');
+    const permissionConfirmation = document.querySelector('#permission-confirmation');
+    const permissionConfirmationMessage = document.querySelector('#permission-confirmation-message');
+    const confirmPermissionAction = document.querySelector('#confirm-permission-action');
+    const rouletteScreen = document.querySelector('#roulette-screen');
+    const discountWheel = document.querySelector('#discount-wheel');
+    const spinRoulette = document.querySelector('#spin-roulette');
+    const rouletteResult = document.querySelector('#roulette-result');
     const searchForm = document.querySelector('#search-form');
     const searchInput = document.querySelector('#search-input');
     const searchEmpty = document.querySelector('#search-empty');
@@ -204,8 +272,29 @@
     const expandedImage = document.querySelector('#expanded-image');
     const imageTitle = document.querySelector('#image-title');
     const imagePrice = document.querySelector('#image-price');
+    const authButton = document.querySelector('#auth-button');
+    const authScreen = document.querySelector('#auth-screen');
+    const authTitle = document.querySelector('#auth-title');
+    const authMessage = document.querySelector('#auth-message');
+    const authTabs = document.querySelector('#auth-tabs');
+    const authForm = document.querySelector('#auth-form');
+    const authUsername = document.querySelector('#auth-username');
+    const authPassword = document.querySelector('#auth-password');
+    const authSecret = document.querySelector('#auth-secret');
+    const secretWordField = document.querySelector('#secret-word-field');
+    const secretHelp = document.querySelector('#secret-help');
+    const authSubmit = document.querySelector('#auth-submit');
+    const authError = document.querySelector('#auth-error');
+    const authAccount = document.querySelector('#auth-account');
+    const signedInName = document.querySelector('#signed-in-name');
     let pendingProduct = null;
     let selectedColors = [];
+    let checkoutDiscount = null;
+    let rouletteSpinning = false;
+    let authMode = 'login';
+    // Cada visita comienza sin una sesión activa, para pedir nuevamente la palabra secreta.
+    let currentUser = null;
+    localStorage.removeItem('indigonio-session');
 
     const money = value => `$${value.toLocaleString('es-AR')}`;
     const objects3dProducts = document.querySelector('#objetos-3d .products');
@@ -236,7 +325,90 @@
     document.querySelector('#close-image').addEventListener('click', closeImage);
     imageScreen.addEventListener('click', event => { if (event.target === imageScreen) closeImage(); });
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeImage(); });
-    const saveCart = () => localStorage.setItem('indigonio-cart', JSON.stringify(cart));
+    const normalize = value => value.trim().toLocaleLowerCase('es-AR');
+    const getAccounts = () => JSON.parse(localStorage.getItem('indigonio-accounts') || '[]');
+    const saveAccounts = accounts => localStorage.setItem('indigonio-accounts', JSON.stringify(accounts));
+    const cartKey = () => currentUser ? `indigonio-cart-${currentUser.username}` : null;
+    const saveCart = () => { if (cartKey()) localStorage.setItem(cartKey(), JSON.stringify(cart)); };
+
+    function loadCart() {
+      cart.length = 0;
+      if (cartKey()) cart.push(...JSON.parse(localStorage.getItem(cartKey()) || '[]'));
+      renderCart();
+    }
+
+    function updateAuthButton() {
+      const signedIn = Boolean(currentUser);
+      authButton.textContent = signedIn ? `Hola, ${currentUser.username}` : 'Iniciar sesión';
+      authButton.classList.toggle('signed-in', signedIn);
+      authButton.setAttribute('aria-label', signedIn ? `Sesión de ${currentUser.username}` : 'Iniciar sesión');
+    }
+
+    function setAuthMode(mode) {
+      authMode = mode;
+      const creating = mode === 'register';
+      authTitle.textContent = creating ? 'Creá tu cuenta ♡' : 'Entrá a INDIGONIO ♡';
+      authSubmit.textContent = creating ? 'Crear cuenta' : 'Iniciar sesión';
+      secretHelp.textContent = creating ? 'Tiene que ser única: nadie más puede usarla.' : 'Ingresala junto a tu usuario y contraseña.';
+      authTabs.querySelectorAll('.auth-tab').forEach(tab => tab.classList.toggle('active', tab.dataset.mode === mode));
+      authError.textContent = '';
+    }
+
+    function openAuth(message = '') {
+      const signedIn = Boolean(currentUser);
+      authMessage.textContent = message || (signedIn ? 'Tu sesión está activa.' : 'Iniciá sesión para agregar productos y comprar.');
+      authTabs.hidden = signedIn;
+      authForm.hidden = signedIn;
+      authAccount.hidden = !signedIn;
+      if (signedIn) signedInName.textContent = `Sesión iniciada como ${currentUser.username}`;
+      else {
+        setAuthMode(authMode);
+        authForm.reset();
+      }
+      authScreen.classList.add('open');
+      authScreen.setAttribute('aria-hidden', 'false');
+      if (!signedIn) authUsername.focus();
+    }
+
+    function closeAuth() {
+      if (!currentUser) {
+        authError.textContent = 'Ingresá con tu usuario, contraseña y palabra secreta para continuar.';
+        return;
+      }
+      authScreen.classList.remove('open');
+      authScreen.setAttribute('aria-hidden', 'true');
+      authError.textContent = '';
+    }
+
+    function requireSession(message = 'Iniciá sesión para poder comprar.') {
+      if (currentUser) return true;
+      openAuth(message);
+      return false;
+    }
+
+    const hasPurchasePermissions = () => localStorage.getItem('indigonio-purchase-permissions') === 'accepted';
+    function openPermissionRequest() {
+      permissionScreen.hidden = false;
+    }
+    function requirePurchasePermissions() {
+      if (hasPurchasePermissions()) return true;
+      openPermissionRequest();
+      return false;
+    }
+    let pendingPermissionAction = null;
+    function askToConfirmPermission(action) {
+      pendingPermissionAction = action;
+      permissionConfirmationMessage.textContent = action === 'allow'
+        ? 'Vas a autorizar los permisos necesarios para finalizar la compra.'
+        : 'Vas a cerrar este aviso sin autorizar los permisos por ahora.';
+      confirmPermissionAction.textContent = action === 'allow' ? 'Sí, permitir' : 'Sí, ahora no';
+      permissionConfirmation.hidden = false;
+      confirmPermissionAction.focus();
+    }
+    function closePermissionConfirmation() {
+      permissionConfirmation.hidden = true;
+      pendingPermissionAction = null;
+    }
 
     function renderCart() {
       const count = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -264,15 +436,38 @@
       cartButton.setAttribute('aria-expanded', String(open));
     }
 
-    function openPayment() {
-      if (!cart.length) return;
-      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-      paymentTotal.textContent = money(total);
-      const products = cart.map(item => `${item.quantity}x ${item.name}${item.color ? ` (${item.color})` : ''}${item.customerName ? ` - Nombre: ${item.customerName}` : ''}${item.details ? ` - Detalle: ${item.details}` : ''}`).join(', ');
-      const message = `Hola INDIGONIO, quiero compartir mi comprobante de pago. Pedido: ${products}. Total: ${money(total)}.`;
+    function showPayment(total) {
+      const discountedTotal = Math.round(total * (1 - (checkoutDiscount || 0) / 100));
+      paymentTotal.textContent = money(discountedTotal);
+      paymentDiscount.hidden = !checkoutDiscount;
+      paymentDiscountValue.textContent = checkoutDiscount ? `${checkoutDiscount}% — ahorrás ${money(total - discountedTotal)}` : '';
+      const products = cart.map(item => `${item.quantity}x ${item.name}${item.color ? ` (${item.color})` : ''}${item.details ? ` - Detalle: ${item.details}` : ''}`).join(', ');
+      const discountText = checkoutDiscount ? ` Descuento de ruleta: ${checkoutDiscount}%.` : '';
+      const message = `Hola INDIGONIO, quiero compartir mi comprobante de pago. Usuario: ${currentUser.username}. Pedido: ${products}. Total: ${money(discountedTotal)}.${discountText} Adjunto la captura del comprobante.`;
       whatsappButton.href = `https://wa.me/?text=${encodeURIComponent(message)}`;
+      receiptFile.value = '';
+      receiptStatus.textContent = 'Elegí una captura para habilitar el envío.';
+      whatsappButton.setAttribute('aria-disabled', 'true');
       paymentScreen.classList.add('open');
       paymentScreen.setAttribute('aria-hidden', 'false');
+    }
+
+    function openDiscountRoulette() {
+      rouletteResult.textContent = '';
+      spinRoulette.disabled = false;
+      rouletteScreen.hidden = false;
+    }
+
+    function openPayment() {
+      if (!requireSession('Iniciá sesión para continuar con el pago.')) return;
+      if (!requirePurchasePermissions()) return;
+      if (!cart.length) return;
+      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      if (total > 40000 && checkoutDiscount === null) {
+        openDiscountRoulette();
+        return;
+      }
+      showPayment(total);
     }
 
     function closePayment() {
@@ -301,6 +496,8 @@
     }
 
     function addToCart(product) {
+      if (!requireSession('Iniciá sesión o creá tu cuenta para agregar productos al carrito.')) return;
+      checkoutDiscount = null;
       const existing = cart.find(item => item.name === product.name && (item.color || '') === (product.color || '') && (item.customerName || '') === (product.customerName || '') && (item.details || '') === (product.details || ''));
       if (existing) existing.quantity += 1;
       else cart.push({ ...product, quantity: 1 });
@@ -313,6 +510,7 @@
       const name = card.querySelector('h3').textContent;
       const singleColorProducts = new Set(['Comedero de pájaros', 'Porta papeles astetic', 'Porta labial astetic práctico de cartera', 'Maceta astetic linda', 'Porta papeles minis', 'Mini Duck', 'Mini iPhone', 'Medusa flexi marina', 'Buddy traba puerta', 'Corazón flexi', 'Serpiente flexi feliz', 'Caquita peque', 'Clicker x 4', 'Guarda latas astetic', 'Porta papel de cocina astetic', 'Bolitas de figet toy', 'Gatito cute figet toy', 'Porta jabón duro astetic', 'Pringles dispencer', 'Abridor de latas', 'Apoya celulares', 'Dispensador de toallitas sanitarias', 'Perrito de globo porta lentes', 'Soporte de perrito para lentes acostado']);
       const noColorProducts = new Set(['Chimuelo figet toy']);
+      const requiredColorCount = name === 'Porta photocarsd de KATSEYE' ? 2 : 0;
       return {
         name,
         price: Number(card.querySelector('.price').textContent.replace(/[^0-9]/g, '')),
@@ -321,7 +519,15 @@
         details: '',
         singleColor: singleColorProducts.has(name),
         noColor: noColorProducts.has(name),
+        requiredColorCount,
       };
+    }
+
+    function canConfirmColors() {
+      const rightAmount = pendingProduct?.requiredColorCount
+        ? selectedColors.length === pendingProduct.requiredColorCount
+        : selectedColors.length > 0;
+      return rightAmount && Boolean(customerName.value.trim());
     }
 
     function closeColorPicker() {
@@ -337,6 +543,7 @@
 
       document.querySelectorAll('.buy').forEach(button => {
         button.addEventListener('click', () => {
+          if (!requireSession('Iniciá sesión o creá tu cuenta para poder comprar.')) return;
           const product = readProduct(button);
           if (product.noColor) {
             addToCart(product);
@@ -344,9 +551,9 @@
           }
           pendingProduct = product;
           colorDetails.value = '';
-          customerName.value = '';
-          colorProductName.textContent = `${product.name}: ${product.singleColor ? 'seleccioná un solo color antes de agregarlo.' : 'seleccioná uno o más colores antes de agregarlo.'}`;
-          document.querySelector('.color-options').setAttribute('aria-label', product.singleColor ? 'Elegí un solo color' : 'Colores disponibles, se puede elegir más de uno');
+          customerName.value = currentUser.username;
+          colorProductName.textContent = `${product.name}: ${product.requiredColorCount ? 'elegí exactamente dos colores antes de agregarlo.' : product.singleColor ? 'seleccioná un solo color antes de agregarlo.' : 'seleccioná uno o más colores antes de agregarlo.'}`;
+          document.querySelector('.color-options').setAttribute('aria-label', product.requiredColorCount ? 'Elegí exactamente dos colores' : product.singleColor ? 'Elegí un solo color' : 'Colores disponibles, se puede elegir más de uno');
           colorScreen.classList.add('open');
           colorScreen.setAttribute('aria-hidden', 'false');
           return;
@@ -362,19 +569,21 @@
         } else if (selectedColors.includes(color)) {
           selectedColors = selectedColors.filter(item => item !== color);
           option.classList.remove('selected');
+        } else if (pendingProduct?.requiredColorCount && selectedColors.length >= pendingProduct.requiredColorCount) {
+          return;
         } else {
           selectedColors.push(color);
           option.classList.add('selected');
         }
-        confirmColor.disabled = selectedColors.length === 0 || !customerName.value.trim();
+        confirmColor.disabled = !canConfirmColors();
       });
     });
     customerName.addEventListener('input', () => {
-      confirmColor.disabled = selectedColors.length === 0 || !customerName.value.trim();
+      confirmColor.disabled = !canConfirmColors();
     });
     confirmColor.addEventListener('click', () => {
       const name = customerName.value.trim();
-      if (!pendingProduct || !selectedColors.length || !name) {
+      if (!pendingProduct || !canConfirmColors() || !name) {
         customerName.reportValidity();
         return;
       }
@@ -388,10 +597,21 @@
       const button = event.target.closest('.remove-item');
       if (!button) return;
       cart.splice(Number(button.dataset.index), 1);
+      checkoutDiscount = null;
       renderCart();
     });
-    document.querySelector('#clear-cart').addEventListener('click', () => { cart.length = 0; renderCart(); });
+    document.querySelector('#clear-cart').addEventListener('click', () => { cart.length = 0; checkoutDiscount = null; renderCart(); });
     document.querySelector('#pay-cart').addEventListener('click', openPayment);
+    receiptFile.addEventListener('change', () => {
+      const receipt = receiptFile.files[0];
+      if (!receipt) {
+        receiptStatus.textContent = 'Elegí una captura para habilitar el envío.';
+        whatsappButton.setAttribute('aria-disabled', 'true');
+        return;
+      }
+      receiptStatus.textContent = `Captura seleccionada: ${receipt.name}. Adjuntala también en WhatsApp.`;
+      whatsappButton.setAttribute('aria-disabled', 'false');
+    });
     document.querySelector('#close-payment').addEventListener('click', closePayment);
     paymentScreen.addEventListener('click', event => { if (event.target === paymentScreen) closePayment(); });
     searchInput.addEventListener('input', filterProducts);
@@ -399,7 +619,106 @@
     cartButton.addEventListener('click', () => toggleCart(true));
     document.querySelector('#close-cart').addEventListener('click', () => toggleCart(false));
     cartOverlay.addEventListener('click', () => toggleCart(false));
-    renderCart();
+    authButton.addEventListener('click', () => openAuth());
+    authScreen.addEventListener('click', event => { if (event.target === authScreen) closeAuth(); });
+    authTabs.addEventListener('click', event => {
+      const tab = event.target.closest('.auth-tab');
+      if (!tab) return;
+      setAuthMode(tab.dataset.mode);
+    });
+    authForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const username = authUsername.value.trim();
+      const usernameKey = normalize(username);
+      const password = authPassword.value;
+      const secret = authSecret.value.trim();
+      const secretKey = normalize(secret);
+      if (!/^[A-Za-z0-9_-]{3,30}$/.test(username)) {
+        authError.textContent = 'El usuario debe tener entre 3 y 30 letras, números, guiones o guiones bajos.';
+        return;
+      }
+      if (password.length < 6 || secret.length < 3) {
+        authError.textContent = 'La contraseña debe tener 6 caracteres y la palabra secreta, al menos 3.';
+        return;
+      }
+      const accounts = getAccounts();
+      if (authMode === 'register') {
+        if (accounts.some(account => account.usernameKey === usernameKey)) {
+          authError.textContent = 'Ese nombre de usuario ya está en uso.';
+          return;
+        }
+        if (accounts.some(account => account.secretKey === secretKey)) {
+          authError.textContent = 'Esa palabra secreta ya fue elegida por otra persona. Elegí otra.';
+          return;
+        }
+        accounts.push({ username, usernameKey, password, secret, secretKey });
+        saveAccounts(accounts);
+        currentUser = { username, usernameKey };
+        localStorage.setItem('indigonio-session', JSON.stringify(currentUser));
+        updateAuthButton();
+        loadCart();
+        closeAuth();
+        return;
+      }
+      const account = accounts.find(item => item.usernameKey === usernameKey && item.password === password && item.secret === secret);
+      if (!account) {
+        authError.textContent = 'Revisá el usuario, la contraseña y la palabra secreta.';
+        return;
+      }
+      currentUser = { username: account.username, usernameKey: account.usernameKey };
+      localStorage.setItem('indigonio-session', JSON.stringify(currentUser));
+      updateAuthButton();
+      loadCart();
+      closeAuth();
+    });
+    document.querySelector('#logout-button').addEventListener('click', () => {
+      currentUser = null;
+      localStorage.removeItem('indigonio-session');
+      updateAuthButton();
+      loadCart();
+      openAuth('Tu sesión se cerró. Ingresá nuevamente para continuar.');
+    });
+    document.querySelector('#allow-permissions').addEventListener('click', () => askToConfirmPermission('allow'));
+    document.querySelector('#later-permissions').addEventListener('click', () => askToConfirmPermission('later'));
+    document.querySelector('#cancel-permission-action').addEventListener('click', closePermissionConfirmation);
+    confirmPermissionAction.addEventListener('click', () => {
+      const allowed = pendingPermissionAction === 'allow';
+      if (allowed) localStorage.setItem('indigonio-purchase-permissions', 'accepted');
+      if (pendingPermissionAction) permissionScreen.hidden = true;
+      closePermissionConfirmation();
+      if (allowed) openPayment();
+    });
+    permissionConfirmation.addEventListener('click', event => { if (event.target === permissionConfirmation) closePermissionConfirmation(); });
+    spinRoulette.addEventListener('click', () => {
+      if (rouletteSpinning) return;
+      rouletteSpinning = true;
+      spinRoulette.disabled = true;
+      const discounts = [5, 10, 15, 20];
+      const index = Math.floor(Math.random() * discounts.length);
+      checkoutDiscount = discounts[index];
+      const degrees = 1440 + (360 - (index * 90 + 45));
+      discountWheel.style.transform = `rotate(${degrees}deg)`;
+      window.setTimeout(() => {
+        rouletteSpinning = false;
+        rouletteResult.textContent = `¡Ganaste ${checkoutDiscount}% de descuento!`;
+        rouletteScreen.hidden = true;
+        const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        showPayment(total);
+      }, 2200);
+    });
+    updateAuthButton();
+    loadCart();
+    openAuth('Ingresá con tu usuario, contraseña y palabra secreta para continuar.');
+    window.addEventListener('pageshow', event => {
+      if (!event.persisted) return;
+      currentUser = null;
+      localStorage.removeItem('indigonio-session');
+      permissionScreen.hidden = true;
+      permissionConfirmation.hidden = true;
+      updateAuthButton();
+      loadCart();
+      openAuth('Ingresá con tu usuario, contraseña y palabra secreta para continuar.');
+    });
   </script>
 </body>
 </html>
